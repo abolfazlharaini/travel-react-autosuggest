@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+[http]
+	extraheader = Authorization: Basic OmdldmRuZjd5ejV4YnJqY3R1cTNuZXlubGc2dmlkbmV0MmhuaXUzd3BpemtuenNnM2I2YnE=
+[remote "origin"]
+	url = https://devops.flightio.com/Flightio/Flightio/_git/flightio-react-autosuggest
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/master
+	vscode-merge-base = origin/master
