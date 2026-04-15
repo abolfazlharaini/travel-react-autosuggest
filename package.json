@@ -1,5 +1,5 @@
 {
-  "name": "flightio-react-autosuggest",
+  "name": "travel-react-autosuggest",
   "version": "10.0.0-fl1",
   "description": "WAI-ARIA compliant React autosuggest component",
   "main": "dist/index.js",
