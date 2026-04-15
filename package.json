@@ -1,6 +1,6 @@
 {
   "name": "travel-react-autosuggest",
-  "version": "10.0.0-fl1",
+  "version": "10.0.1",
   "description": "WAI-ARIA compliant React autosuggest component",
   "main": "dist/index.js",
   "repository": {
@@ -19,11 +19,11 @@
     "dist": " babel src -d dist",
     "demo-dist": "rm -rf demo/dist && mkdir demo/dist && npm run copy-static-files && cross-env BABEL_ENV=production webpack --config webpack.gh-pages.config.js",
     "standalone": "cross-env BABEL_ENV=production webpack --config webpack.standalone.config.js && webpack --config webpack.standalone-demo.config.js",
-    "prebuild": "npm run prettier && npm run lint && npm test",
-    "build": "npm run dist && npm run standalone",
+    "prebuild": "set NODE_OPTIONS=--openssl-legacy-provider && npm run lint && npm test",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && npm run dist && npm run standalone",
     "gh-pages-build": "npm run prebuild && npm run demo-dist",
     "postversion": "git push && git push --tags",
-    "prepublish": "npm run dist && npm run standalone"
+    "prepublish": "set NODE_OPTIONS=--openssl-legacy-provider && npm run dist && npm run standalone"
   },
   "dependencies": {
     "es6-promise": "^4.2.8",
